@@ -173,13 +173,13 @@ const Tarefas = () => {
                       <option value="FAZENDO">Fazendo</option>
                       <option value="FEITO">Feito</option>
                     </select>
-                  </label>                  
-                </form>
-                <div className="box-buttons">
-                  <button className='btn-salvar' type="submit">Salvar</button>
-                  <button className='btn-remover' onClick={() => removeTask(null, tarefaSelecionada.id)}>Excluir</button>
-                  <button className='btn-fechar' onClick={() => setIsModalOpen(false)}>Fechar</button>                
-                </div>               
+                  </label>
+                    <div className="box-buttons">
+                      <button className='btn-salvar' type="submit">Salvar</button>
+                      <button className='btn-remover' onClick={() => removeTask(null, tarefaSelecionada.id)}>Excluir</button>
+                      <button className='btn-fechar' onClick={() => setIsModalOpen(false)}>Fechar</button>                
+                    </div>                      
+                </form>           
               </>
             )}            
           </div>
