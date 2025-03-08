@@ -165,7 +165,7 @@ const Tarefas = () => {
                   </label>
                   <label>
                     <p>Status:</p>
-                    <select
+                    <select className='option'
                       value={status || tarefaSelecionada?.status || ''}
                       onChange={(e) => setStatus(e.target.value)}
                     >
@@ -173,10 +173,10 @@ const Tarefas = () => {
                       <option value="FAZENDO">Fazendo</option>
                       <option value="FEITO">Feito</option>
                     </select>
-                  </label>
-                  <button className='btn-salvar' type="submit">Salvar</button>
+                  </label>                  
                 </form>
                 <div className="box-buttons">
+                  <button className='btn-salvar' type="submit">Salvar</button>
                   <button className='btn-remover' onClick={() => removeTask(null, tarefaSelecionada.id)}>Excluir</button>
                   <button className='btn-fechar' onClick={() => setIsModalOpen(false)}>Fechar</button>                
                 </div>               
